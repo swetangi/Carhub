@@ -31,6 +31,7 @@ const SearchBar = ({ setManufacturer, setModel }) => {
   }
 
   return (
+    // ok sir smj aa giya hve chal commit kari branch ma aaline dekhad
     // <form className="searchbar" onSubmit={handleSearch}>
     //   <div className="searchbar__item">
     //     <SearchManufacturer
