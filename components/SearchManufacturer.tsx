@@ -6,8 +6,8 @@ import { Combobox, Transition } from "@headlessui/react";
 import { SearchManufacturerProps } from "@/types";
 import { manufacturers } from "@/constants";
 const SearchManufacturer = ({
- selected,
- setSelected,
+  manufacturer,
+  setManufacturer,
 }: SearchManufacturerProps) => {
   const [query, setQuery] = useState("");
   const filteredManufacturers =
@@ -89,7 +89,7 @@ const SearchManufacturer = ({
     //   </Combobox>
     // </div>
     <div className="search-manufacturer">
-      <Combobox value={selected} onChange={setSelected}>
+      <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative w-full">
           {/* Button for the combobox. Click on the icon to see the complete dropdown */}
           <Combobox.Button className="absolute top-[14px]">
